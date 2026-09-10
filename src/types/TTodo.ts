@@ -1,11 +1,17 @@
+export enum category {
+  "School",
+  "Home",
+  "Work",
+}
+
 export type Task = {
   id: number;
 
   text: string;
 
-  category: string;
+  category: category;
 
-  date: string;
+  date: Date;
 
-  status: string;
+  status: "Pending" | "Done" | "Late";
 };
