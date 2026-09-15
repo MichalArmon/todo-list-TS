@@ -4,7 +4,7 @@ export enum category {
   "Work",
 }
 
-export type Task = {
+export interface Todo {
   id: string;
 
   text: string;
@@ -14,4 +14,4 @@ export type Task = {
   date: Date;
 
   status: "Pending" | "Done" | "Late";
-};
+}
