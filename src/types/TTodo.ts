@@ -5,7 +5,7 @@ export enum category {
 }
 
 export type Task = {
-  id: number;
+  id: string;
 
   text: string;
 
